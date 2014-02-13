@@ -1,0 +1,9 @@
+<?php
+@session_start();
+if(isset($_SESSION['idKorisnika'])){
+	unset($_SESSION['idKorisnika']);
+	unset($_SESSION['Username']);
+	session_destroy();
+	header('Location:index.php');
+}
+?>

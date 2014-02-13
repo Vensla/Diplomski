@@ -1,0 +1,10 @@
+<?php
+@session_start();
+	if(isset($_REQUEST['img'])){
+		$slika=$_REQUEST['img'];
+		$link=strstr($slika,'?',true);
+		$l=strstr($link,'slike');
+		$_SESSION['img']=$l;
+	}
+	header("location:index.php");
+?>

@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body,html{
+	height:100%;
+	background-color: #222;
+	color:#fff;
+  font-family: 'League Gothic';
+  font-size: 18px;
+
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+span{
+	padding-right: 5px;
+}
+i{
+	cursor:default;
+}
+#naslov{
+	padding-left: 10px;
+	display: inline;
+	font-size: 42px;
+	font-family: 'League Gothic';
+	cursor:default;
+}
+
+#kontrole{
+	height:50px;
+	width:100%;
+	background-color: #000;
+}
+#radniProstor{
+	overflow: auto;
+}
+#properties{
+	position: absolute;
+	left: 10px;
+	top: 60px; 
+	background-color: #000;
+	display: none;
+	border-radius: 10px;
+	z-index: 99999;
+  max-height: 90%;
+  overflow: auto;
+  min-width: 200px;
+}
+.forma{
+	margin:20px;
+	margin-bottom: 10px;
+}
+span:last-child{
+  float:right;
+  margin-top:10px;
+}
+input[type="button"]{
+	font-size: 30px;
+	color:#fff;
+	border:none;
+	font-family: 'League Gothic';
+	background-color: #000;
+
+}
+input[type="button"]:hover{
+	cursor: pointer;
+  color:#ff8447;
+}
+input[type="submit"]{
+	font-size: 30px;
+	color:#fff;
+	border:none;
+	font-family: 'League Gothic';
+	background-color: #000;
+}
+#properties input[type="button"]:last-child{
+  float: right;
+}
+select{
+  font-family: 'League Gothic';
+  font-size: 22px;
+}
+input[type="submit"]:hover{
+	cursor: pointer;
+  color:#ff8447;
+}
+
+#crop{
+	display:inline;
+}
+#sidebar{
+  top:50px;
+  right:0px;
+  width:200px;
+  height:100%;
+  overflow: auto;
+  position: fixed;
+  z-index: 300;
+  display:none;
+  background-color: #000;
+}
+.sidebarSlike{
+  max-width: 150px;
+  max-height: 200px;
+  width:100%;
+}
+.sidebarSlike:hover{
+  cursor:pointer;
+}
+.slicice{
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.slicice:hover{
+  background-color: #ff8447;
+}
+.slicice input[type="checkbox"]{
+  position:relative;
+  right:5px;
+}
+#autoFilteri{
+  padding-left: 5px;
+}
+.error{
+  color: red;
+}
+/*IKONICE*/
+
+@font-face {
+  font-family: 'font';
+  src: url('font.eot?12291497');
+  src: url('font.eot?12291497#iefix') format('embedded-opentype'),
+       url('font.woff?12291497') format('woff'),
+       url('font.ttf?12291497') format('truetype'),
+       url('font.svg?12291497#font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'font';
+    src: url('../font/font.svg?12291497#font') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-cog:before { content: '\e804'; } /* '' */
+.icon-trash:before { content: '\e808'; } /* '' */
+.icon-resize-small:before { content: '\e802'; } /* '' */
+.icon-crop:before { content: '\e801'; } /* '' */
+.icon-picture:before { content: '\e800'; } /* '' */
+.icon-gallery:before { content: '\e807'; } /* '' */
+.icon-user:before { content: '\e806'; } /* '' */
+.icon-floppy:before { content: '\e805'; } /* '' */
+.icon-camera:before { content: '\e803'; } /* '' */
